@@ -21,9 +21,9 @@
         <label for="cantidad">Cantidad a retirar (USD)
             <span>*</span>
         </label>
-        <input type="number">
+        <input type="number" onkeyup="conversion(this.value)">
         <label for="equivalente">Equivalente a:</label>
-        <input type="number" disabled>
+        <input type="number" id="cantidadRetiro" disabled>
         <label for="caja">Tipo de Caja
             <span>*</span>
         </label>
