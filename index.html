@@ -8,5 +8,32 @@
     <title>Retiros</title>
 </head>
 <body>
+    <form action="submit">
+        <p>DATOS REQUERIDOS:</p>
+        <label for="nombreApellido">Nombres y apellidos (como figura en DNI)
+            <span>*</span>
+        </label>
+        <input type="text">
+        <label for="cuenta">Cuenta titular a transferir (CBU,CVU o alis)
+            <span>*</span>
+        </label>
+        <input type="text">
+        <label for="cantidad">Cantidad a retirar (USD)
+            <span>*</span>
+        </label>
+        <input type="number">
+        <label for="equivalente">Equivalente a:</label>
+        <input type="number" disabled>
+        <label for="caja">Tipo de Caja
+            <span>*</span>
+        </label>
+        <select name="tipoCaja" id="tipoCaja">
+            <option value="0">Elija un tipo de caja</option>
+            <option value="Empresa">Caja Empresa</option>
+            <option value="Pais">Caja País</option>
+            <option value="Inmueble">Caja Inmueble</option>
+        </select>
+        <button>RETIRAR</button>
+    </form>
 </body>
 </html>
