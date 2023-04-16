@@ -14,6 +14,6 @@ function consultarApi(){
 }
 function conversion(cant){
     let equivalente = cant * valorVenta;
-    document.getElementById('cantidadRetiro').value = `${equivalente.toFixed(2)}`
+    document.getElementById('cantidadARS').value = `$ ${equivalente.toFixed(2)} ARS `
 }
-document.addEventListener('DOMContentLoaded', consultarApi(), conversion());
+document.addEventListener('DOMContentLoaded', consultarApi());
