@@ -17,3 +17,20 @@ import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/9.19.
 
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
+  const db = getDatabase(app);
+
+  export const insertRetiros = (nombre, cuenta, cantidadUSD, cantidadARS, caja) => {
+    push(ref(db,"Retiros/"),{
+      Nombre: nombre,
+      Cuenta: cuenta,
+      CantidadUSD: cantidadUSD,
+      CantidadARS: cantidadARS,
+      Caja: caja,
+    })
+    .then(()=> {
+      console.log("Datos guardados")
+    })
+    .catch((error)=>{
+      console.log(error)
+    });
+  }
