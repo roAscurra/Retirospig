@@ -1,5 +1,7 @@
 let valorVenta = 0;
-const button = document.getElementById('boton')
+const button = document.getElementById('boton');
+const modal = document.getElementById('ventana');
+const cerrarModal = document.getElementById('cerrarVentana');
 function precioVenta(precio){
     return precio - (precio*6.5/100)
 }
@@ -46,3 +48,11 @@ function habilitarBoton(){
 document.getElementById('tipoCaja').addEventListener('change',habilitarBoton);
 document.getElementById('form').addEventListener('keyup',habilitarBoton);
 document.addEventListener('DOMContentLoaded', consultarApi());
+
+button.addEventListener("click",()=>{
+    modal.showModal();
+})
+cerrarModal.addEventListener("click",()=>{
+    modal.close();
+    button.disabled=true;
+})
