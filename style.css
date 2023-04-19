@@ -33,3 +33,10 @@ margin-top: 8%;
 font-size: large;
 background-color: #94C456;
 }
+#title{
+text-align: center;
+font-size:xx-large;
+font-weight: 700;
+font-family: 'Roboto Condensed', sans-serif;
+text-decoration: underline;
+}
