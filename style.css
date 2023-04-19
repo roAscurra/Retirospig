@@ -48,3 +48,6 @@ margin: 0;
 span{
 color: red;
 }
+body{
+overflow: hidden; 
+}
